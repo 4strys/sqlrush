@@ -1,0 +1,1 @@
+DROP DATABASE beluga_orders_plus;
