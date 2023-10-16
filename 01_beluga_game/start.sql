@@ -22,13 +22,11 @@ CREATE TABLE beluga_game_entity (
     FOREIGN KEY (weapon_used) REFERENCES beluga_game_weapon(id)
 );
 
-
-
 CREATE TABLE beluga_game_session (
     id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
     name VARCHAR(255),
     meta JSON,
-    creation_date DATETIME DEFAULT CURRENT_TIMESTAMP,
-    last_action DATETIME,
+    creation_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    last_action TIMESTAMP,
     list_entity JSON
 );
